@@ -1,11 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import PlayerDisplay from './Components/PlayerDisplay';
+import CreatePlayer from './Components/CreatePlayer';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './Components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PlayerList from './Components/Players';
+    
 
-function App() {
+
+      function App() {
   return (
-    <div className="App">
-      <h1>Welcome to My Page - not sure whats going on here yet but Hey!</h1>
-      <a href='https://github.com/Craigm84' target='blank'>My GitHub Profile</a>
+    <div>     
+      <Router>
+        <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/profile' element={<PlayerList />} />
+        <Route path='/profile/existing/:id'/>
+        <Route path='/create' element={<CreatePlayer />} />
+        </Routes>
+    </Router>  
     </div>
   );
 }
