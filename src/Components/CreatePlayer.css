@@ -1,9 +1,10 @@
-body {
+.heather {
   position: fixed;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
-  height: auto;
+  height: 100%;
+  width: 100%;
   background-image: url(Heather.jpg);
   background-size: cover;
   opacity: 1; 
