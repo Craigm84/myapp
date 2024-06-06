@@ -2,7 +2,7 @@ function AboutMe() {
     return (
 
         <div>
-            <h1>About Me</h1>
+            <h1>This website is about me</h1>
         </div>
       );
 }
