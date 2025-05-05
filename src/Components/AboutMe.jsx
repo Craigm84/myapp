@@ -2,7 +2,7 @@ function AboutMe() {
     return (
 
         <div>
-            <h1>About Me</h1>
+            <h1>Football Coach at Heather St Johns Juniors for my sons team</h1>
         </div>
       );
 }
